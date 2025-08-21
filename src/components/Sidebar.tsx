@@ -5,9 +5,9 @@ const Sidebar = () => {
   interface Product{
     category:string
   }  
-  interface FetchResponse{
-    products:Product[]
-  }
+  // interface FetchResponse{
+  //   products:Product[]
+  // }
   const [categories,setCategories] = useState<string[]>([]);// the categories will be array of strings
   const [keywords,setKeywords] = useState<string[]>([
     "apple",
@@ -17,6 +17,7 @@ const Sidebar = () => {
     "shoes",
     "shirt"
   ]);
+  console.log(setKeywords);
   const {searchQuery,setSearchQuery,selectedCategory,setSelectedCategory,minPrice,setMinPrice,maxPrice,setMaxPrice,keyword,setSelectedKeyword} = useFilter()
   useEffect(()=>{
     const fetchCategories = async()=>{

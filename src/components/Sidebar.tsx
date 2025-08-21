@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react"
 import { useFilter } from "./FilterContext";
 
 const Sidebar = () => {
-  interface Product{
-    category:string
-  }  
+  // interface Product{
+  //   category:string
+  // }  
   // interface FetchResponse{
   //   products:Product[]
   // }
@@ -18,7 +18,7 @@ const Sidebar = () => {
     "shirt"
   ]);
   console.log(setKeywords);
-  const {searchQuery,setSearchQuery,selectedCategory,setSelectedCategory,minPrice,setMinPrice,maxPrice,setMaxPrice,keyword,setSelectedKeyword} = useFilter()
+  const {searchQuery,setSearchQuery,selectedCategory,setSelectedCategory,minPrice,setMinPrice,maxPrice,setMaxPrice,setSelectedKeyword} = useFilter()
   useEffect(()=>{
     const fetchCategories = async()=>{
         try {

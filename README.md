@@ -55,7 +55,7 @@ Hosting: Vercel
 
 Clone the repo:
 
-git clone https://github.com/your-username/e-commerce.git
+git clone https://github.com/SG-MATR/e-commerce.git
 cd e-commerce
 
 
